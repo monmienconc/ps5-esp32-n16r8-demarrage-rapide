@@ -1,0 +1,12 @@
+menu "PS5 offline host"
+    config PS5_AP_SSID
+        string "Wi-Fi network name"
+        default "PS5-Host"
+    config PS5_AP_PASSWORD
+        string "Wi-Fi password (8 to 63 characters)"
+        default "ps5offline"
+    config PS5_AP_CHANNEL
+        int "Wi-Fi channel"
+        range 1 11
+        default 6
+endmenu
